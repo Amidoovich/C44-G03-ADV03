@@ -57,17 +57,27 @@
             #endregion
             #region Example 03
             // Linq
-            List<int> Numbers = Enumerable.Range(1, 100).ToList();
+            //List<int> Numbers = Enumerable.Range(1, 100).ToList();
 
-            List<int> OddNumbers =  FilterLists.FindElements(Numbers,FilterOfList.CheckOdd);
+            //List<int> OddNumbers =  FilterLists.FindElements(Numbers,FilterOfList.CheckOdd);
 
-            FilterFucDelegate filter = FilterOfList.CheckEven;
+            //FilterFucDelegate<int> filter = FilterOfList.CheckEven;
 
-            List<int> EvenNumbers = FilterLists.FindElements(Numbers,filter);
+            //List<int> EvenNumbers = FilterLists.FindElements(Numbers,filter);
 
-            List<int> Divisable07Numbers =  FilterLists.FindElements(Numbers,FilterOfList.DivisableBy7);
-            foreach (int num in Divisable07Numbers)
-                Console.Write($"{num} ");
+            //List<int> Divisable07Numbers =  FilterLists.FindElements(Numbers,FilterOfList.DivisableBy7);
+            //foreach (int num in Divisable07Numbers)
+            //    Console.Write($"{num} ");
+
+            //List<string> Names = new List<string>() { "Ahmed", "Aya", "Khaled", "Rawan", "Amr", "Heba" };
+
+            //List<string> Names = ["Ahmed", "Aya", "Khaled", "Rawan", "Amr", "Heba"];
+
+            //List<string> FilterName = FilterLists.FindElements(Names,FilterOfList.CheckLengthLessThan4);
+            //List<string> FilterName02 = FilterLists.FindElements(Names,FilterOfList.CheckLengthMoreThan4);
+
+            //foreach (string s in FilterName02)
+            //    Console.WriteLine(s);
 
             #endregion
         }

@@ -24,5 +24,14 @@ namespace C44_G03_ADV03
         {
             return number % 10 == 0;
         }
+
+        public static bool CheckLengthLessThan4(string name)
+        {
+            return name?.Length < 4;
+        }
+        public static bool CheckLengthMoreThan4(string name)
+        {
+            return name?.Length > 4;
+        }
     }
 }
