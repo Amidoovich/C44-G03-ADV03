@@ -55,6 +55,21 @@
             //    Console.WriteLine(s);
 
             #endregion
+            #region Example 03
+            // Linq
+            List<int> Numbers = Enumerable.Range(1, 100).ToList();
+
+            List<int> OddNumbers =  FilterLists.FindElements(Numbers,FilterOfList.CheckOdd);
+
+            FilterFucDelegate filter = FilterOfList.CheckEven;
+
+            List<int> EvenNumbers = FilterLists.FindElements(Numbers,filter);
+
+            List<int> Divisable07Numbers =  FilterLists.FindElements(Numbers,FilterOfList.DivisableBy7);
+            foreach (int num in Divisable07Numbers)
+                Console.Write($"{num} ");
+
+            #endregion
         }
     }
 }
