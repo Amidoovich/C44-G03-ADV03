@@ -31,18 +31,28 @@
             #endregion
             #region Example 02
 
-            int[] Numbers = { 7, 5, 6, 3, 2, 1, 8, 9, 4 };
+            //int[] Numbers = { 7, 5, 6, 3, 2, 1, 8, 9, 4 };
 
-            //SortingAlgorithms.BubbleSort(Numbers);
-            //SortingAlgorithms.BubbleSort(Numbers,SortingTypes.CompareGreater);
+            ////SortingAlgorithms.BubbleSort(Numbers);
+            //SortingAlgorithms<int>.BubbleSort(Numbers, SortingTypes.SortAsc);
 
-            SortingTypesFuncDelegate sortingTypes = SortingTypes.CompareLess;
+            //SortingTypesFuncDelegate<int, int,bool> sortingTypes = SortingTypes.SortDesc;
 
 
-            SortingAlgorithms.BubbleSort(Numbers,sortingTypes);
+            //SortingAlgorithms<int>.BubbleSort(Numbers, sortingTypes);
 
-            foreach (int i in Numbers)
-                Console.WriteLine(i);
+            //foreach (int i in Numbers)
+            //    Console.WriteLine(i);
+
+            //string[] Names = { "Omar", "Mohamed", "Amr", "Salma" };
+            //SortingAlgorithms<string>.BubbleSort(Names, SortingTypes.SortAsc);
+
+            //SortingTypesFuncDelegate<string, string,bool> sortingType = SortingTypes.SortDesc;
+
+            //SortingAlgorithms<string>.BubbleSort(Names, sortingType);
+
+            //foreach (string s in Names)
+            //    Console.WriteLine(s);
 
             #endregion
         }

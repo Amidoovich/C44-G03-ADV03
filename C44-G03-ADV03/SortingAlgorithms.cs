@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace C44_G03_ADV03
 {
-    public delegate bool SortingTypesFuncDelegate(int a, int b);
-    internal class SortingAlgorithms
+    public delegate Tout SortingTypesFuncDelegate<in T1,in T2,out Tout>(T1 a, T2 b);
+    internal class SortingAlgorithms<T>
     {
-        public static void BubbleSort(int[] Arr ,SortingTypesFuncDelegate sortingTypes)
+        public static void BubbleSort(T[] Arr ,SortingTypesFuncDelegate<T,T,bool> sortingTypes)
         {
             if(Arr?.Length > 0 && sortingTypes is not null)
                 for(int i = 0; i < Arr.Length; i++)
@@ -28,9 +28,9 @@ namespace C44_G03_ADV03
         //                    Swap(ref Arr[j], ref Arr[j + 1]);
         //}
 
-        public static void Swap(ref int x,ref int y)
+        public static void Swap(ref T x,ref T y)
         {
-            int temp = x;
+            T temp = x;
             x = y;
             y = temp;
         }
