@@ -9,7 +9,7 @@ namespace C44_G03_ADV03
     public delegate bool FilterFucDelegate<T>(T a);
     internal static class FilterLists
     {
-        public static List<T> FindElements<T>(List<T> numbers,FilterFucDelegate<T> filter)
+        public static List<T> FindElements<T>(List<T> numbers,Predicate<T> filter)
         {
             List<T> result = new List<T>();
             if(numbers?.Count > 0 && filter is not null)
