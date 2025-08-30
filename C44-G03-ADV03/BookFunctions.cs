@@ -23,7 +23,7 @@ namespace C44_G03_ADV03
         public static string GetAuthors (Book? B)
         {
             if (B is not null)
-                return $"Authors :\n{string.Join("\n",B.Authors?.Length)}";
+                return $"Authors :\n{string.Join("\n",B.Authors)}\n";
 
             return "No Authors Found";    
         }
@@ -31,7 +31,7 @@ namespace C44_G03_ADV03
         public static string GetPrice(Book B)
         {
             if (B is not null)
-                return $"Price : {B.Price}";
+                return $"Price : {B.Price:C}";
 
             return "No Price Found";
         }
